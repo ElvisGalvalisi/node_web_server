@@ -1,7 +1,10 @@
-const express = require('express') //se instancia la librería
-const path = require('path') //propio de node para leer las carpetas del proyecto
+//const express = require('express') //se instancia la librería (commonJS)
+import express from 'express' //se instancia la librería
 
-const startServer = (options) => {
+//const path = require('path') //propio de node para leer las carpetas del proyecto commonJS
+import path from'path' //propio de node para leer las carpetas del proyecto
+
+export const startServer = (options) => {
     //desestructuramos el puerto
     const {port, public_path = 'public'} = options
     
@@ -27,7 +30,7 @@ const startServer = (options) => {
     })
 
 }
-
+/*
 module.exports = {
     startServer
-}
+}*/

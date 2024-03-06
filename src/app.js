@@ -1,6 +1,9 @@
-const { envs } = require('./config/env.js');
-const { startServer } = require('./server/server.js')
 
+//const { envs } = require('./config/env.js');    //commonJS
+import { envs }  from './config/env.js'
+
+//const { startServer } = require('./server/server.js')
+import { startServer } from './server/server.js'
 
 //funcion que se crea para luego autollamarse
 const main = () => {
